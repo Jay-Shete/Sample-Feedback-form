@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAire Support Feedback Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>MedAire Support Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required placeholder="Type your issue here for a more in-depth search">
+
+            <label for="description">Description *</label>
+            <textarea id="description" name="description" required placeholder="Describe your issue here for a more in-depth search"></textarea>
+
+            <label for="category">Select the category that best fits your query. *</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>- Select -</option>
+                <option value="account and login">Account and login</option>
+                <option value="alerts emails and notifications">Alerts, emails  and notifications</option>
+                <option value="something is not working">Something is not working</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="product">Which system or product do you need help with? *</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>- Select -</option>
+                <option value="aviation app">MedAire Aviation app</option>
+                <option value="cp aviation">Client portal -Aviation</option>
+                <option value="cp luxury yachting">Client portal - Luxury yachting</option>
+                <option value="eShop">eShop</option>
+                <option value="mediconnect app">MediConnect App</option>
+                <option value="s2s">Sea to Shore app</option>
+                <option value="MedSea app">MedSea app</option>
+            </select>
+
+            <label for="operationDate">Is this impacting operations? If so, please provide a date for the start of operations</label>
+            <input type="date" id="operationDate" name="operationDate">
+
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="loginEmail">Email address you use for login (if different from above)</label>
+            <input type="email" id="loginEmail" name="loginEmail">
+
+            <label for="company">Organisation or company that you are associated with *</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="reportedBefore">Have you reported this issue before? *</label>
+            <select id="reportedBefore" name="reportedBefore" required>
+                <option value="" disabled selected>- Select -</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="comments">Please feel free to share any other comments or suggestions you may have to help us improve</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
